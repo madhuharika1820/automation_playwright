@@ -1,0 +1,27 @@
+let mypromise=new Promise((resolve,reject)=>
+{
+    setTimeout(()=>
+    {
+        const success=true;  //const success=false;
+        if(success)
+            {
+            resolve("operation successful");
+        }
+        else
+            {
+            reject(new Error("operation failed"));
+        }
+    },1000);
+});
+
+mypromise
+.then((result)=>
+{
+    console.log(result);
+})
+.catch((error)=>{
+    console.error(error.message);
+})
+.finally(()=>{
+console.log("promise settled (completed)");
+});

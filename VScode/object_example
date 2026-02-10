@@ -1,0 +1,26 @@
+const firstperson={
+    firstname:"yerroju",
+    lastname:"madhu",
+    age:21,
+    qualification:"software testing"
+}
+
+const secondperson=new Object({
+    firstname:"yerroju",
+    lastname:"harika",
+    age:21,
+    qualification:"software"
+ });
+ console.log(secondperson.lastname)
+
+const thirdperson={
+    firstname:"venna",
+    lastname:"prasanna",
+    age:20,
+    qualification:"cleaner",
+    fullname:function(){
+        return this.firstname+""+ this.lastname;
+    }
+}
+console.log(firstperson.qualification)
+console.log(thirdperson.fullname())
